@@ -16,4 +16,5 @@ CMD cd /root/ && \
     geth account list && \
     geth --dev --identity "PrivateTestNode" --unlock 0 --password password.sec \
     --rpc --rpcaddr "0.0.0.0" --rpcapi="db,eth,net,web3,personal,web3" \
-    --port "30303" --nodiscover --maxpeers 0 --datadir /root/data --mine
+    --port "30303" --nodiscover --maxpeers 0 --datadir /root/data --mine \
+    --etherbase 0
